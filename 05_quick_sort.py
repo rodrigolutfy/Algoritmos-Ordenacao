@@ -1,11 +1,17 @@
 '''
-Vantagens: 
-    - Muito eficiente na prática, e é o algoritmo de ordenação mais usado em diversas bibliotecas
-    - Não requer memória adicional significativa
-    
-Desvantagens: 
-    - Não é estável — pode alterar a ordem de elementos iguais.
-    - A versão recursiva simples (como essa) não é a mais eficiente; otimizações são necessárias para casos reais.
+Como funciona:
+    Escolhe um pivô e particiona os elementos em menores e maiores.
+    Ordena recursivamente as partições com boa eficiência média.
+
+Vantagens:
+    - Muito rápido na média (O(n log n)).
+    - Ordenação in-place (usa pouca memória extra).
+    - Bom desempenho prático na maioria dos casos.
+
+Desvantagens:
+    - Pior caso O(n²), quando o pivô é mal escolhido.
+    - Não é estável.
+    - Implementação recursiva pode causar estouro de pilha em listas grandes.
 '''
 
 def quick_sort(lista):

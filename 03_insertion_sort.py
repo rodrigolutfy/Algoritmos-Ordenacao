@@ -1,11 +1,17 @@
 '''
+Como funciona:
+    Insere cada elemento na posição correta dentro da parte ordenada da lista.
+    Eficiente para listas pequenas ou quase ordenadas.
+
 Vantagens:
-    - Eficiente para listas pequenas ou quase ordenadas
-    - Baixa movimentação de dados
+    - Excelente para listas pequenas ou quase ordenadas (quase O(n)).
+    - Simples de implementar e estável.
+    - Ordena in-place, sem necessidade de memória extra.
 
 Desvantagens:
-    - Pouco eficiente com grandes volumes de dados 
-    - Lento para listas grandes 
+    - Ineficiente para listas grandes (O(n²)).
+    - Desempenho pior no caso inversamente ordenado.
+    - Pouco adequado para grandes volumes de dados.
 '''
 
 def insertion_sort(lista):

@@ -1,11 +1,17 @@
 '''
+Como funciona:
+    Compara e troca pares adjacentes até que a lista esteja ordenada.
+    O maior elemento 'borbulha' para o final a cada passagem.
+
 Vantagens:
-    - Funciona bem para listas pequenas ou quase ordenadas
-    - Ótimo para aprender conceitos básicos de comparação e troca.
-    
+    - Muito simples de implementar e entender.
+    - Detecta facilmente quando a lista já está ordenada (versão otimizada).
+    - Ordena in-place, sem necessidade de memória extra.
+
 Desvantagens:
-    - Faz muitas comparações e trocas desnecessárias
-    - Mmuito lento para grandes volumes de dados, perdendo para algoritmos mais avançados.
+    - Muito lento para listas grandes (O(n²)).
+    - Pouco eficiente comparado a outros algoritmos simples.
+    - Não é estável na sua forma básica (pode ser adaptado para ser).
 '''
 
 def bubble_sort(lista):

@@ -1,12 +1,17 @@
 '''
-Vantagens:
-    - Merge Sort possui desempenho garantido de O(n log n), mesmo no pior caso.
-    - É um algoritmo estável, ou seja, mantém a ordem original dos elementos iguais.
+Como funciona:
+    Divide a lista em partes menores, ordena e funde recursivamente.
+    Utiliza o método dividir-para-conquistar com boa eficiência.
 
-Desvantagens: 
-    - Para listas pequenas, pode ser menos eficiente que algoritmos mais simples como o Insertion Sort.
-    - O uso de recursão pode causar estouro de pilha (stack overflow) em linguagens ou sistemas com limite
-      baixo de chamadas recursivas.
+Vantagens:
+    - Tempo garantido O(n log n) no pior caso.
+    - Estável (preserva a ordem relativa dos iguais).
+    - Muito eficiente para grandes listas e listas ligadas.
+
+Desvantagens:
+    - Usa memória extra proporcional ao tamanho da lista.
+    - Implementação mais complexa que os métodos simples.
+    - Pode ser mais lento em listas muito pequenas devido à sobrecarga.
 '''
 
 def merge_sort(lista):

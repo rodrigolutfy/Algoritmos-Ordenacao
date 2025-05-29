@@ -1,11 +1,17 @@
 '''
+Como funciona:
+    Seleciona o menor elemento e o coloca na posição correta em cada iteração.
+    Divide a lista em parte ordenada e não ordenada.
+
 Vantagens:
-    - Poucas trocas de posição (eficiente para gravação em memória limitada)
-    - Fácil de entender e implementar
+    - Simples de entender e implementar.
+    - Consome pouca memória extra (in-place).
+    - Previsível em tempo de execução (sempre O(n²))
 
 Desvantagens:
-    - O Selection Sort sempre faz o mesmo número de comparações, mesmo se a lista já estiver ordenada.
-    - Não é estável (pode mudar a ordem de elementos iguais)
+    - Ineficiente para listas grandes (tempo quadrático).
+    - Não é estável (a ordem relativa dos iguais pode mudar).
+    - Desempenho não melhora para listas quase ordenadas.
 '''
 
 def selection_sort(lista):

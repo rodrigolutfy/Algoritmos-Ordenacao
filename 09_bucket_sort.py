@@ -1,11 +1,17 @@
 '''
-Vantagens: 
-    - Pode atingir complexidade linear O(n) se os dados estiverem uniformemente distribuídos.
-    - Fácil de combinar com outros algoritmos.
+Como funciona:
+    Distribui os dados em baldes e ordena individualmente.
+    Funciona bem com dados uniformemente distribuídos.
 
-Desvantagens: 
-    - Desempenho depende fortemente da distribuição dos dados.
-    - Não é eficiente se os dados estiverem agrupados ou desbalanceados.
+Vantagens:
+    - Muito eficiente para dados uniformemente distribuídos (quase O(n)).
+    - Pode ser paralelo facilmente.
+    - Estável, dependendo do método de ordenação interno.
+    
+Desvantagens:
+    - Desempenho ruim para dados não uniformemente distribuídos.
+    - Complexidade extra para escolher o número e intervalo dos baldes.
+    - Usa memória extra para os baldes.
 '''
 
 def bucket_sort(arr):

@@ -1,11 +1,17 @@
 '''
-Vantagens: 
-    - Extremamente rápido — complexidade O(n + k), onde k é o maior valor da lista.
-    - Estável (se implementado corretamente), preservando a ordem de elementos iguais.
+Como funciona:
+    Conta a frequência de cada valor e posiciona diretamente.
+    Eficiente para dados inteiros pequenos e com pouca variação.
 
-Desvantagens: 
-    - Ineficiente para listas com valores muito altos ou grande faixa de valores.
-    - Não é um algoritmo in-place, pois usa arrays auxiliares para contagem.
+Vantagens:
+    - Tempo linear O(n + k) para dados com faixa limitada.
+    - Muito eficiente para dados inteiros com valores pequenos.
+    - Estável.
+
+Desvantagens:
+    - Só funciona para dados inteiros ou discretos com intervalo pequeno.
+    - Usa memória extra proporcional ao intervalo dos valores (k).
+    - Não é um algoritmo comparativo, limitado a casos específicos.
 '''
 
 def counting_sort(arr):

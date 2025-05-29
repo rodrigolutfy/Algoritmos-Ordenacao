@@ -1,11 +1,17 @@
 '''
-Vantagens: 
-    - Garantia de desempenho O(n log n) mesmo no pior caso.
-    - Algoritmo in-place — não usa memória extra significativa.
+Como funciona:
+    Transforma a lista em um heap e extrai o maior elemento repetidamente.
+        Garante ordenação sem uso extra de memória significativa.
 
-Desvantagens: 
-    - Não é um algoritmo estável — pode alterar a ordem de elementos iguais.
-    - A manipulação contínua da estrutura de heap pode afetar a performance com dados muito grandes.
+Vantagens:
+    - Tempo garantido O(n log n) no pior caso.
+    - Ordenação in-place, sem memória extra significativa.
+    - Bom para aplicações com restrição de memória.
+
+Desvantagens:
+    - Não é estável.
+    - Geralmente mais lento que Quick Sort na prática.
+    - Implementação mais complexa.
 '''
 
 def heapify(arr, n, i):

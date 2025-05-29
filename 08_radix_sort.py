@@ -1,11 +1,17 @@
 '''
-Vantagens: 
-    - Complexidade linear O(nk) em muitos casos, onde k é o número de dígitos.
-    - Muito eficiente para listas grandes de inteiros com tamanhos de dígito semelhantes.
+Como funciona:
+    Ordena dígito a dígito usando algoritmo estável como apoio.
+    Ideal para inteiros ou strings com tamanho fixo.
 
-Desvantagens: 
-    - Requer que os números sejam inteiros e positivos (ou adaptação para negativos).
-    - Usa memória extra (não é in-place) por causa dos arrays auxiliares.
+Vantagens:
+    - Pode ordenar números grandes em tempo linear (O(d(n + k)), com d dígitos).
+    - Boa opção para strings ou números com tamanho fixo.
+    - Estável.
+
+Desvantagens:
+    - Depende de um algoritmo estável para ordenar dígitos.
+    - Não funciona bem para dados com tamanho variável ou grande número de dígitos.
+    - Consome memória extra.
 '''
 
 def counting_sort_por_digito(arr, exp):
