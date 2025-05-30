@@ -1,7 +1,7 @@
 '''
 Como funciona:
     Transforma a lista em um heap e extrai o maior elemento repetidamente.
-        Garante ordenação sem uso extra de memória significativa.
+    Garante ordenação sem uso extra de memória significativa.
 
 Vantagens:
     - Tempo garantido O(n log n) no pior caso.
